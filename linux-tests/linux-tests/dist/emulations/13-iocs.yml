@@ -1,0 +1,7 @@
+---
+atomics:
+  - attack_technique: T1204.002
+    atomic_tests:
+      - name: Linux - Fake Eicar
+        auto_generated_guid: 8b655dd8-fedf-4af3-9e6e-f4284b12e1ad
+    signatures: sigma_linux_eicartest

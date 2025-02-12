@@ -1,0 +1,14 @@
+---
+command_timeout: 180
+atomics:
+  - attack_technique: T1059.006
+    atomic_tests:
+      - name: Execute shell script via python's command mode arguement
+        auto_generated_guid: 3a95cdb2-c6ea-4761-b24e-02b71889b8bb
+        signatures:
+          - proc_creation_lnx_susp_find_execution
+          - sigma_generic_cred_search
+          - sigma_proc_creation_lnx_susp_sensitive_file_access
+          - sigma_t1552_004_unsecured_credentials_private_keys
+          - sigma_t1032_system_owner_user_discovery_global
+          # ...

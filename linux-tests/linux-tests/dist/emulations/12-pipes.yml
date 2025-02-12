@@ -1,0 +1,13 @@
+---
+atomics:
+  - attack_technique: T1140
+    atomic_tests:
+      - name: Linux Base64 Encoded Shebang in CLI
+        auto_generated_guid: 3a15c372-67c1-4430-ac8e-ec06d641ce4d
+        signatures:
+          - sigma_proc_creation_lnx_base64_shebang_cli
+  - attack_technique: T1059.004
+    atomic_tests:
+      - name: Detecting pipe-to-shell
+        auto_generated_guid: fca245a8-a585-4f28-a2df-6495973976a1
+        signatures: curl_shell_group

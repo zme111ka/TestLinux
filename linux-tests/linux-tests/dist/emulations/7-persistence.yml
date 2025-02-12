@@ -1,0 +1,16 @@
+---
+atomics:
+  - attack_technique: T1053.003
+    atomic_tests:
+      - name: Cron - Add script to /etc/cron.d folder
+        auto_generated_guid: 078e69eb-d9fb-450e-b9d0-2e118217c846
+        signatures: sigma_file_event_lnx_persistence_cron_files
+      - name: Cron Service Manipulation
+        auto_generated_guid: f9a518fd-643d-4a32-8cbb-14a631d15e79
+  - attack_technique: T1543.002
+    atomic_tests:
+      - name: Create Systemd Service
+        auto_generated_guid: d9e4f24f-aa67-4c6e-bcbf-85622b697a7c
+        signatures:
+          - sigma_t_1543_002_create_or_modify_system_process_systemd_service
+          - sigma_systemd_service_started

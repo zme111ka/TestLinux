@@ -1,0 +1,9 @@
+---
+
+# 4. Система должна поддерживать возможность обнаружения инъекций вредоносного кода в память легитимного процесса.
+atomics:
+  - attack_technique: T1574.006
+    atomic_tests:
+      - name: Shared Library Injection via LD_PRELOAD
+        auto_generated_guid: bc219ff7-789f-4d51-9142-ecae3397deae
+        signatures: ld_preload
